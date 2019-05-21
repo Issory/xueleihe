@@ -31,7 +31,11 @@ comments: true
 ![Fig1](https://github.com/Issory/issory.github.io/blob/master/img/2019-05-17-PaperReading-01/Fig1.jpg?raw=true)
 
 # Formulation
-$$\sum\limits_{\forall j}$$
+$$\mathbf{y}_i=\frac{1}{\mathcal{C}(x)}\sum\limits_{\forall j}{f(\mathbf{x}_i,\mathbf{x}_j)g(\mathbf{x}_j)}$$
+$\f(\mathbf{x}_i,\mathbf{x}_j)$ is the affinity matrix between $i$ and $j$.
+$g(\mathbf{x}_j)$ is the input of position $j$
+$\mathcal{C}(x)$ is the normlization factor
+
 
 # Reference
 1. <span id="1">Xiaolong Wang and Ross Girshick and Abhinav Gupta and Kaiming He. Non-local Neural Networks. In Computer Vision and Pattern Recognition (CVPR), 2018.</span>
