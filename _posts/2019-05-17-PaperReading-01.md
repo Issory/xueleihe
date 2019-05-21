@@ -32,7 +32,7 @@ comments: true
 
 # Formulation
 ```
-$$\sum\limits_{\forall j}{f(\mathbf{x}_i,\mathbf{x}_j)g(\mathbf{x}_j)}$$
+$$\sum\limits_{\forall j}$$
 ```
 
 # Reference
