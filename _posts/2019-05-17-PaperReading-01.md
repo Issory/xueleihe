@@ -31,6 +31,9 @@ comments: true
 ![Fig1](https://github.com/Issory/issory.github.io/blob/master/img/2019-05-17-PaperReading-01/Fig1.jpg?raw=true)
 
 # Formulation
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 $$\mathbf{y}_i=\frac{1}{\mathcal{C}}(x)\sum_{\forall j}f(\mathbf{x}_i,\mathbf{x}_j)g(\mathbf{x}_j)$$
 $\f(\mathbf{x}_i,\mathbf{x}_j)$ is the affinity matrix between $i$ and $j$.
 $g(\mathbf{x}_j)$ is the input of position $j$
