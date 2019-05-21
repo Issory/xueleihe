@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Understanding of "Non-local Neural Networks[1](#1])"
+title: Understanding of "Non-local Neural Networks"
 tags: [paper,block]
 #gh-repo: daattali/beautiful-jekyll
 #gh-badge: [star, fork, follow]
 comments: true
 ---
 
-# Feature of Non-local operation
+# Feature of Non-local operation[1](#1)
 - capture long-range dependency
 - efficinet and achieve the best restuls in few layers
 - easy to combine with other operation
@@ -27,7 +27,7 @@ comments: true
 | Trajectories | [9](#9),[10](#10) | Combined Handcraft and DeepLearning features |
 ## Notification
 {: .box-note}
-**Note:** The Comparsion of different architectures [[7](#7)].![2019-05-17-PaperReading-01-Fig1](https://github.com/Issory/issory.github.io/blob/master/img/2019-05-17-PaperReading-01/Fig1.jpg?raw=true)
+**Note:** The Comparsion of different architectures [[7](#7)].![Fig1](https://github.com/Issory/issory.github.io/blob/master/img/2019-05-17-PaperReading-01/Fig1.jpg?raw=true)
 
 # Reference
 1. <span id="1">Xiaolong Wang and Ross Girshick and Abhinav Gupta and Kaiming He. Non-local Neural Networks. In Computer Vision and Pattern Recognition (CVPR), 2018.</span>
