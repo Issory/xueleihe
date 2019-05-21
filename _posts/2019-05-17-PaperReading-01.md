@@ -31,7 +31,7 @@ comments: true
 ![Fig1](https://github.com/Issory/issory.github.io/blob/master/img/2019-05-17-PaperReading-01/Fig1.jpg?raw=true)
 
 # Formulation
-$\sum_{\forall j}$
+$\sum\nolimits_{\forall j}{j}$
 
 # Reference
 1. <span id="1">Xiaolong Wang and Ross Girshick and Abhinav Gupta and Kaiming He. Non-local Neural Networks. In Computer Vision and Pattern Recognition (CVPR), 2018.</span>
