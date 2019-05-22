@@ -1,15 +1,3 @@
-<head>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            inlineMath: [['$','$']]
-            }
-        });
-    </script>
-</head>
-
 ---
 layout: post
 title: Understanding of "Non-local Neural Networks"
@@ -43,9 +31,8 @@ comments: true
 ![Fig1](https://github.com/Issory/issory.github.io/blob/master/img/2019-05-17-PaperReading-01/Fig1.jpg?raw=true)
 
 # Formulation
-<div align="center"><img src="https://latex.codecogs.com/svg.latex?\mathbf{y}_ i=\frac{1}{\mathcal{C}(x)}\sum\limits_{\forall j}{f(\mathbf{x}_ i,\mathbf{x}_ j)g(\mathbf{x}_ j)}"/></div>
-
-- <img src="https://latex.codecogs.com/svg.latex?f(\mathbf{x}_ i,\mathbf{x}_ j)"/> is the affinity matrix between <img src="https://latex.codecogs.com/svg.latex?i"/> and <img src="https://latex.codecogs.com/svg.latex?j"/>.
+$$\mathbf{y}_ i=\frac{1}{\mathcal{C}(x)}\sum\limits_{\forall j}{f(\mathbf{x}_ i,\mathbf{x}_ j)g(\mathbf{x}_ j)}$$
+- $f(\mathbf{x}_ i,\mathbf{x}_ j)$ is the affinity matrix between $i$ and $j$.
 - $g(\mathbf{x}_ j)$ is the input of position $j$
 - $\mathcal{C}(x)$ is the normlization factor
 
