@@ -33,7 +33,7 @@ comments: true
 # Formulation
 <div align="center"><img src="https://latex.codecogs.com/svg.latex?\mathbf{y}_ i=\frac{1}{\mathcal{C}(x)}\sum\limits_{\forall j}{f(\mathbf{x}_ i,\mathbf{x}_ j)g(\mathbf{x}_ j)}"/></div>
 
-- <img src="https://latex.codecogs.com/svg.latex?f(\mathbf{x}_ i,\mathbf{x}_ j)"/> is the affinity matrix between <img src="https://latex.codecogs.com/svg.latex?i"/> and <img src="https://latex.codecogs.com/svg.latex?j)"/>.
+- <img src="https://latex.codecogs.com/svg.latex?f(\mathbf{x}_ i,\mathbf{x}_ j)"/> is the affinity matrix between <img src="https://latex.codecogs.com/svg.latex?i"/> and <img src="https://latex.codecogs.com/svg.latex?j"/>.
 - $g(\mathbf{x}_ j)$ is the input of position $j$
 - $\mathcal{C}(x)$ is the normlization factor
 
