@@ -19,6 +19,13 @@ comments: true
 - similar to self attention
 - Video classfication:
 
+| Number | Next number | Previous number |
+| :------ |:--- | :--- |
+| Five | Six | Four |
+| Ten | Eleven | Nine |
+| Seven | Eight | Six |
+| Two | Three | One |
+
 | Architectures | Reference | Advantages |
 | :------ |:--- | :--- |
 | CNN+RNN | [2](#2),[3](#3) | Learning Sequential Dynamics, Learning Whole Video  |
