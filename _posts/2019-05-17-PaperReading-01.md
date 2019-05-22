@@ -19,19 +19,13 @@ comments: true
 - similar to self attention
 - Video classfication:
 
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
-
 | Architectures | Reference | Advantages |
 | :------ |:--- | :--- |
 | CNN+RNN | [2](#2),[3](#3) | Learning Sequential Dynamics, Learning Whole Video  |
 | C3D | [4](#4),[5](#5),[6](#6),[7](#7) | Combined Spatio and Temporal Features |
 | Optical Flow | [8](#8) | Separate Spatial and Temporal Stream|
 | Trajectories | [9](#9),[10](#10) | Combined Handcraft and DeepLearning features |
+
 ## Notification
 {: .box-note}
 **Note:** The Comparsion of different architectures [[7](#7)].
