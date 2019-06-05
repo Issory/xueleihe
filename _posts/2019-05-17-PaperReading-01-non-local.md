@@ -1,18 +1,17 @@
 ---
 layout: post
-title: Understanding of "Non-local Neural Networks"
-tags: [paper,block]
+title: Understanding of "Non-local Block"
+tags: [paper,no-local,deep learning]
 #gh-repo: daattali/beautiful-jekyll
 #gh-badge: [star, fork, follow]
 comments: true
 ---
-
 # Feature of Non-local operation[1](#1)
 - capture long-range dependency
 - efficinet and achieve the best restuls in few layers
 - easy to combine with other operation
 
-# Backgroud and Related Work
+# Backgroud and Related Work[1](#1)
 - 2D or 3D convolutional networks
 - Non-local means for image denoising (imporved as BM3D)
 - graphical model such as CRF.
@@ -31,11 +30,16 @@ comments: true
 **Note:** The Comparsion of different architectures [[7](#7)].
 ![Fig1](https://github.com/Issory/issory.github.io/blob/master/img/2019-05-17-PaperReading-01/Fig1.jpg?raw=true)
 
-# Formulation
+# Formulation[1](#1)
 $$\mathbf{y}_ i=\frac{1}{\mathcal{C}(x)}\sum\limits_{\forall j}{f(\mathbf{x}_ i,\mathbf{x}_ j)g(\mathbf{x}_ j)}$$
 - $f(\mathbf{x}_ i,\mathbf{x}_ j)$ is the affinity matrix between $i$ and $j$.
 - $g(\mathbf{x}_ j)$ is the input of position $j$
 - $\mathcal{C}(x)$ is the normlization factor
+
+# Implementation through keras
+- The non-local block layers.([See in Github](https://github.com/facebookresearch/video-nonlocal-net))
+# Variant of Non-local operation
+
 
 # Reference
 1. <span id="1">Xiaolong Wang and Ross Girshick and Abhinav Gupta and Kaiming He. Non-local Neural Networks. In Computer Vision and Pattern Recognition (CVPR), 2018.</span>
