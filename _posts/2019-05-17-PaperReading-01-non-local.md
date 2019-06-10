@@ -36,10 +36,12 @@ $$\mathbf{y}_ i=\frac{1}{\mathcal{C}(x)}\sum\limits_{\forall j}{f(\mathbf{x}_ i,
 - $g(\mathbf{x}_ j)$ is the input of position $j$
 - $\mathcal{C}(x)$ is the normlization factor
 
-# Implementation through keras
-- The non-local block layers.([See in Github](https://github.com/facebookresearch/video-nonlocal-net))
 # Variant of Non-local operation
+- Generalized Compact Non-Local Module [[11](#11)].([See in Github]())
 
+# Implementation through keras
+- The non-local block layers.([See in Github](https://github.com/Issory/non-local-block/blob/master/non-local-layer/non_local.py))
+- 
 
 # Reference
 1. <span id="1">Xiaolong Wang and Ross Girshick and Abhinav Gupta and Kaiming He. Non-local Neural Networks. In Computer Vision and Pattern Recognition (CVPR), 2018.</span>
@@ -53,4 +55,4 @@ The author's project. [See in Github](https://github.com/facebookresearch/video-
 8. <span id="8">K. Simonyan and A. Zisserman. Two-stream convolutional networks for action recognition in videos. In Neural Information Processing Systems (NIPS), 2014.</span>
 9. <span id="9">L. Wang, Y. Qiao, and X. Tang. Action recognition with trajectory-pooled deep-convolutional descriptors. In Computer Vision and Pattern Recognition (CVPR), 2015.</span>
 10. <span id="10"> N. Watters, A. Tacchetti, T. Weber, R. Pascanu, P. Battaglia, and D. Zoran. Visual interaction networks. In Neural Information Processing Systems (NIPS), 2017.</span>
-
+11. <span id="11"> K. Yue, M. Sun, Y. Yuan, F. Zhou, Compact generalized non-local network. Advances in Neural Information Processing Systems (NIPS). 2018: 6510-6519.</span>
