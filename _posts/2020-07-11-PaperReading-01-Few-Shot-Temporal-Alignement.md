@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Understanding of "Design Light-Weight 3D Convolutional Networks"
-tags: [paper,temporal,deep learning,fast]
+title: Understanding of "Few-shot Video Classification via Temporal Alignment"
+tags: [paper,temporal,deep learning,few shot]
 #gh-repo: daattali/beautiful-jekyll
 #gh-badge: [star, fork, follow]
 comments: true
 ---
 # Objective
-Deep 3D CNN for spatio-temporal information fusion ability
+Classify a previous unseen video
 
 # Problem
 1. The constraint of the memory
@@ -31,16 +31,17 @@ Deep 3D CNN for spatio-temporal information fusion ability
     - Stage Two
         - convolution in single channel $(\alpha N,1,1,R,S)$
         - $1\times1\times1$ kernels at last $(N, \alpha N,1,1,1)$
-    - Memory cost $\alpha NCK +\alpha NRS +\alpha N^2$
-    ![Fig1](https://github.com/Issory/issory.github.io/blob/master/img/2019-07-07-PaperReading-01-Temporal-CNN/Fig1.png?raw=true)
+    - Memory cost $\alpha NCK +\lapha NRS +\alpha N^2$
+![Fig1](https://github.com/Issory/issory.github.io/blob/master/img/2019-07-07-PaperReading-01-Temporal-CNN/Fig1.png?raw=true)
     {: .box-note}
+    **Note:** 
     - The input $N(Channel)\times C(Batch Size)\times T(Thick) \times H(Height) \times W(weight)$
     - The kernel $(N(Channel),C(Batch Size),K,R,S)$
-    - Traditional memory cost $N\times C\times K\times R\times S$
+    - Traditional memory cost $N\times C\times K\times R\times S\times$
 2. Temporal residual gradient
     - In single channel, $T$ time steps has $T-1$ temporal residual gradient in pixel.
     - Mean of $T$ time steps is added for statistical distribution
-    ![Fig2](https://github.com/Issory/issory.github.io/blob/master/img/2019-07-07-PaperReading-01-Temporal-CNN/Fig2.png?raw=true)
+![Fig2](https://github.com/Issory/issory.github.io/blob/master/img/2019-07-07-PaperReading-01-Temporal-CNN/Fig2.png?raw=true)
 
 3. Fast Algorithm[1](#1)
     - Core:
@@ -50,7 +51,5 @@ Deep 3D CNN for spatio-temporal information fusion ability
         - 2D
             - Traditional Multiplicatoins for Convolution: Kernel size $(m\times m,r\times r)->(m^2\times r^2)$ 
             - Fast Algorithms: $(m,r)->(m+r-1)^2$
-
 # Reference
-
 1. <span id="1">Lavin, Andrew, and Scott Gray. "Fast algorithms for convolutional neural networks." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2016.</span>
