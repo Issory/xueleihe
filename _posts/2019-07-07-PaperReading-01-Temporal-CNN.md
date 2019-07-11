@@ -33,10 +33,11 @@ Deep 3D CNN for spatio-temporal information fusion ability
         - $1\times1\times1$ kernels at last $(N, \alpha N,1,1,1)$
     - Memory cost $\alpha NCK +\alpha NRS +\alpha N^2$
     ![Fig1](https://github.com/Issory/issory.github.io/blob/master/img/2019-07-07-PaperReading-01-Temporal-CNN/Fig1.png?raw=true)
-    {: .box-note}
+
     - The input $N(Channel)\times C(Batch Size)\times T(Thick) \times H(Height) \times W(weight)$
     - The kernel $(N(Channel),C(Batch Size),K,R,S)$
     - Traditional memory cost $N\times C\times K\times R\times S$
+    {: .box-note}
 2. Temporal residual gradient
     - In single channel, $T$ time steps has $T-1$ temporal residual gradient in pixel.
     - Mean of $T$ time steps is added for statistical distribution
