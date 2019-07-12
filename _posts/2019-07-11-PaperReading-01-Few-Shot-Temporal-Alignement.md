@@ -25,9 +25,9 @@ Classify a previous unseen video
     $$D_{l,m}=1-\frac{f_{\varphi}(S_i)_ l \cdot f_{\varphi}(S_j)_ m}{\|f_{\varphi}(S_i)_ l\|\|f_{\varphi}(S_j)_ m\|}$$
     where $S_i$ and $S_j$ are sampled videos, $f_{\varphi}$ is embedding function with $\varphi$ learnable parameters, and $l,m$ are the index of frames.
     - the best alignment 
-    $$W^*=\arg\min\nolimits_{W\in B}\langleW,D(f_{\varphi}(S_i),f_{\varphi}(S_j))\rangle$$, where B is the binary alignment matrix.
+    $$W^*=\arg\min\nolimits_{W\in B}\langle W,D(f_{\varphi}(S_i),f_{\varphi}(S_j))\rangle$$, where B is the binary alignment matrix.
     - Dynamic Time Warping 
-    $$\gamma(i,j)=D_{ij}+\min\left { \gamma(i-1,j-1),\gamma(i-1,j),\gamma(i,j-1)\right } $$
+    $$\gamma(i,j)=D_{ij}+\min\{\gamma(i-1,j-1),\gamma(i-1,j),\gamma(i,j-1)\} $$
     - Relaxation $\min(x_1,x_2,\cdots,x_n)\approx-\lambda\log\sum\nolimits_{i=1}^n e^{-x_i/\lambda}$
 
 ![Fig1](https://github.com/Issory/issory.github.io/blob/master/img/2019-07-11-PaperReading-01-Few-Shot-Temporal-Alignement/Fig1.png?raw=true)
