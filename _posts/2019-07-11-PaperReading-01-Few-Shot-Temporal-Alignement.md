@@ -22,8 +22,8 @@ Classify a previous unseen video
     - the sampled video is encoded into features
 2. Distance Measure with Temporal Alignment Module(TAM)
     - Compute the frame-level distance matrix as $D_{l,m}=1-\frac{f_{\varphi}(S_i)__l \dot f_{\varphi}(S_j)__m}{\|f_{\varphi}(S_i)__l\|\|f_{\varphi}(S_j)__m\|}$, where $S_i$ and $S_j$ are sampled videos, $f_{\varphi}$ is embedding function with $\varphi$ learnable parameters, and $l,m$ are the index of frames.
-    - the best alignment $W*=\arg\min\nolimits_{W\in B}<W,D(f_{\varphi}(S_i),f_{\varphi}(S_j))>$, where B is the binary alignment matrix.
-    - Dynamic Time Warping $\gamma(i,j)=D_{ij}+\min{\gamma(i-1,j-1),\gamma(i-1,j),\gamma(i,j-1)}$
+    - the best alignment $W^*=\arg\min\nolimits_{W\in B}<W,D(f_{\varphi}(S_i),f_{\varphi}(S_j))>$, where B is the binary alignment matrix.
+    - Dynamic Time Warping $\gamma(i,j)=D_{ij}+\min\{\gamma(i-1,j-1),\gamma(i-1,j),\gamma(i,j-1)\}$
     - Relaxation $\min(x_1,x_2,\cdots,x_n)\approx-\lambda\log\sum\nolimits_{i=1}^n e^{-x_i/\lambda}$
 
 ![Fig1](https://github.com/Issory/issory.github.io/blob/master/img/2019-07-11-PaperReading-01-Few-Shot-Temporal-Alignement/Fig1.png?raw=true)
